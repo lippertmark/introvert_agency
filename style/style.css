@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+input, p{
+    font-family: Pragmatica;
+    font-weight: 400;
+}
+body{
+    background-color: #131313;
+    color: #ffffff;
+}
+
+
+/* стили первого блока(главного)*/
+.main{
+    height: 100vh;
+}
+.main header{
+    padding-top: 24px;
+}
+.main__body{
+    margin-left: 10%;
+}
+.main__content{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+.main__left{
+    width: 50%;
+}
+.main__label{
+    font-size: 57px;
+}
+.main__text{
+    margin-top: 64px;
+    font-size: 30px;
+}
+
+
+
+/* стили блока о нас*/
+.about{
+    background-color: #F4F3F3;
+    padding: 83px 0;
+}
+.about__wrapper{
+    margin: 0 10%;
+    color: #000000;
+}
+.about__text1{
+    font-size: 34px;
+}
+
+.about__block{
+    display: flex;
+    flex-direction: row;
+    margin-top: 73px;
+    justify-content: space-between;
+}
+.about__text2{
+    font-size: 30px;
+    width: 45%;
+}
+
+
+
+
+/* стили блока про сервисы*/
+.services__wrapper{
+    margin: 83px 10%;
+    display: flex;
+    flex-direction: row;
+}
+.services__label{
+    font-size: 90px;
+    position: relative;
+}
+.services__left{
+    width: 50%;
+}
+.services__title-left{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+.services__block{
+    margin-bottom: 45px;
+}
+.services__name{
+    font-size: 50px;
+}
+.services__right{
+    width: 50%;
+}
+.services__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.services__big{
+    font-size: 50px;
+}
+.services__small{
+    margin-left: 5px;
+    font-size: 25px;
+    color: #898989;
+}
+.services__text{
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+
+
+/* стили блока про прайс и услуги*/
+.basic-services{
+
+}
+
+/* стили блока про формат*/
+.format{
+    background-color: #FBFBF9;
+    color: #000000;
+}
+
+.format__big{
+    font-size: 62px;
+}
+.format__left{
+    margin: 34px 0 60px 10%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.format__main-label{
+
+    font-weight: 500;
+    font-size: 59px;
+    padding: 83px 0 38px 10%;
+}
+.format__right{
+    margin: 34px 10% 60px 0;
+    width: 50%;
+}
+.format__small{
+    margin-left: 5px;
+    font-size: 25px;
+    color: #898989;
+}
+.format__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.format__label{
+
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 85.5%;
+}
+.format__text{
+    margin-top: 40px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 31px;
+}
+.gray{
+    background-color: #F2F2F2;
+}
+.black-gray{
+    background-color: #E5E5E5;
+}
+
+
+.contact{
+
+}
+.contact__wrapper{
+    margin: 0 10%;
+    padding: 57px 0;
+}
+.contact__ph-num{
+    font-size: 120px;
+}
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+}
+.contact form{
+
+    display: flex;
+    flex-direction: row;
+    margin: 150px 0 56px 0;
+}
+.pole{
+    margin-right: 20px;
+}
+.contact button{
+    width: 259px;
+    height: 60px;
+    background: #DFDFDF;
+    border-radius: 20px;
+    font-size: 25px;
+}
+.contact__police{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    color: #A3A3A3;
+}
+.contact__checkbox{
+    display: flex;
+    flex-direction: row;
+}
+.contact__agree{
+    margin-left: 16px;
+}
+input[type="checkbox"] {
+    background-color: #131313;
+    height: 22px;
+    width: 22px;
+}
+.contact__confid{
+    margin-left: 60px;
+}
+
+
+.basic__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.basic__wrapper{
+    margin: 82px 10%;
+}
+.basic__label{
+    font-size: 55px;
+}
+.basic__block{
+    margin-top: 50px;
+    background-color: #000000;
+    padding: 40px;
+    width: 24%;
+}
+.basic__name{
+    font-size: 25px;
+}
+.basic__price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.basic__price{
+    white-space: nowrap;
+}
+.basic__text{
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+
+.footer{
+    color: #000000;
+    background-color: #E5E5E5;
+    padding: 83px 0;
+}
+.footer__wrapper{
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer__copyright{
+
+}
+.footer video{
+    margin: 30px 0 21px 0;
+}
+.footer__label{
+    margin-bottom: 46px;
+    font-size: 21px;
+    color: #808080;
+}
+.footer__text{
+    font-size: 24px;
+    margin-top: 10px;
+}
+.footer__img{
+    margin-top: 56px;
+}
