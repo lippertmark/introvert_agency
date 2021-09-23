@@ -110,7 +110,7 @@ body{
     flex-direction: row;
 }
 .main__left{
-    width: 50%;
+    width: 45%;
 }
 .main__label{
     font-size: 57px;
