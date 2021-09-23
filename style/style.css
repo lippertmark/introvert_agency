@@ -119,6 +119,35 @@ body{
     margin-top: 64px;
     font-size: 30px;
 }
+@media (max-width: 800px){
+    .main {
+        display: none;
+    }
+}
+
+
+
+/* стили первого блока мобилки(главного)*/
+.main__mobile{
+    display: none;
+    min-height: 100vh;
+    padding-left: 10px;
+    flex-direction: column;
+}
+.main__mobile header{
+    padding-top: 24px;
+}
+.main__mobile header img{
+
+}
+@media (max-width: 800px){
+    .main__mobile {
+        display: flex;
+    }
+    .main__label{
+        margin-top: 30px;
+    }
+}
 
 
 
@@ -145,6 +174,26 @@ body{
     font-size: 30px;
     width: 45%;
 }
+@media (max-width: 800px){
+    .about{
+        width: 100%;
+    }
+    .about__wrapper{
+        margin: 0 10px;
+    }
+    .about__text1{
+        font-size: 18px;
+    }
+    .about__block{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .about__text2{
+        margin-top: 39px;
+        font-size: 18px;
+        width: 100%;
+    }
+}
 
 
 
@@ -158,9 +207,17 @@ body{
 .services__label{
     font-size: 90px;
     position: relative;
+    height: 90px;
 }
 .services__left{
-    width: 50%;
+    width: 0%;
+    display: flex;
+    flex-direction: row;
+}
+.services__left img{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 .services__title-left{
     display: flex;
@@ -169,12 +226,20 @@ body{
 }
 .services__block{
     margin-bottom: 45px;
+    width: 50%;
 }
 .services__name{
     font-size: 50px;
 }
 .services__right{
-    width: 50%;
+    width: 100%;
+    height: 400px; /* высота нашего блока */
+    background: transparent; /* цвет фона, белый */
+    border: 0px solid #C1C1C1; /* размер и цвет границы блока */
+    overflow-y: scroll; /* прокрутка по вертикали */
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 }
 .services__title{
     display: flex;
@@ -194,6 +259,39 @@ body{
     margin-top: 25px;
     font-size: 25px;
 }
+@media (max-width: 800px){
+    .services__left img{
+        display: none;
+    }
+    .services__wrapper{
+        margin: 83px 10px;
+        flex-direction: column;
+    }
+    .services__right{
+        width: 100%;
+        height: auto; /* высота нашего блока */
+        overflow-y: initial; /* прокрутка по вертикали */
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .services__title{
+        flex-direction: column-reverse;
+    }
+    .services__right{
+        margin-top: 30px;
+    }
+    .services__block{
+        width: 100%;
+        margin: 25px 0;
+    }
+    .services__text{
+        font-size: 20px;
+    }
+    .services__name{
+        font-size: 40px;
+    }
+}
+
 
 
 
@@ -218,7 +316,6 @@ body{
     width: 50%;
 }
 .format__main-label{
-
     font-weight: 500;
     font-size: 59px;
     padding: 83px 0 38px 10%;
@@ -250,12 +347,55 @@ body{
     font-weight: normal;
     line-height: 31px;
 }
+.format__label-lb{
+    display: flex;
+    flex-direction: row;
+}
+.format__label-lb img{
+    margin-left: 20px;
+    height: 80px;
+    margin-top: 70px;
+
+}
 .gray{
     background-color: #F2F2F2;
 }
 .black-gray{
     background-color: #E5E5E5;
 }
+@media (max-width: 800px){
+    .format__label-lb img{
+        display: none;
+
+    }
+    .format__wrapper{
+        flex-direction: column;
+        margin: 0 10px;
+        padding: 34px 0;
+    }
+    .format__left{
+        margin: 0;
+    }
+    .format__right{
+        margin: 0;
+    }
+    .format__right{
+        margin-top: 20px;
+    }
+    .format__label{
+        font-size: 35px;
+    }
+    .format__text{
+        font-size: 20px;
+    }
+    .format__right{
+        width: 100%;
+    }
+}
+
+
+
+
 
 
 .contact{
@@ -277,6 +417,7 @@ input[type="text"] {
     height: 40px;
     width: 300px;
     font-size: 20px;
+    font-family: Pragmatica;
 }
 .contact form{
 
@@ -315,12 +456,53 @@ input[type="checkbox"] {
 .contact__confid{
     margin-left: 60px;
 }
+@media (max-width: 800px){
+    .contact form{
+        flex-direction: column;
+        width: 100%;
+        margin: 50px 0 56px 0;
+
+    }
+    .contact .form{
+        width: 100%;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .contact__wrapper{
+        margin: 0 10px;
+    }
+    .contact button{
+        margin-top: 25px;
+    }
+    input[type="checkbox"] {
+        background-color: #131313;
+        height: 30px;
+        width: 30px;
+    }
+    .contact .pole{
+        width: 100%;
+    }
+    .contact__police{
+        flex-direction: column;
+    }
+    .contact__confid{
+        margin: 15px 0 0 0;
+    }
+    .contact__ph-num{
+        font-size: 30px;
+    }
+}
 
 
+
+/*стили блока ОСНОВНЫЕ УСЛУГИ*/
 .basic__row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow-x: scroll;
 }
 .basic__wrapper{
     margin: 82px 10%;
@@ -332,23 +514,46 @@ input[type="checkbox"] {
     margin-top: 50px;
     background-color: #000000;
     padding: 40px;
-    width: 24%;
+    width: 380px;
+    margin-right: 20px;
 }
 .basic__name{
     font-size: 25px;
+    font-weight: 500;
 }
 .basic__price{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 .basic__price{
     white-space: nowrap;
 }
-.basic__text{
-    margin-top: 18px;
+.basic__price .basic__text{
+
     font-size: 20px;
 }
+.basic__text{
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 125%;
+}
+@media (max-width: 800px){
+    .basic__row{
+        flex-direction: column;
+        overflow-x: initial;
+    }
+    .basic__wrapper{
+        margin: 82px 10px;
+    }
+    .basic__block{
+        width: 100%;
+    }
+}
+
+
+
 
 
 .footer{
@@ -384,4 +589,16 @@ input[type="checkbox"] {
 }
 .footer__img{
     margin-top: 56px;
+}
+.footer__label{
+    margin-top: 70px;
+}
+@media (max-width: 800px){
+    .footer__wrapper{
+        margin: 0 10px;
+        flex-direction: column;
+    }
+    .footer__label{
+        margin-top: 30px;
+    }
 }
