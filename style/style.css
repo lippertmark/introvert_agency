@@ -108,9 +108,10 @@ body{
     margin-top: 70px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .main__left{
-    width: 45%;
+    width: 30%;
 }
 .main__label{
     font-size: 57px;
@@ -236,11 +237,14 @@ body{
     height: 400px; /* высота нашего блока */
     background: transparent; /* цвет фона, белый */
     border: 0px solid #C1C1C1; /* размер и цвет границы блока */
+
     overflow-y: scroll; /* прокрутка по вертикали */
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 }
+
+
 .services__title{
     display: flex;
     flex-direction: row;
@@ -290,6 +294,9 @@ body{
     .services__name{
         font-size: 40px;
     }
+}
+.services__right::-webkit-scrollbar {
+    width: 0;
 }
 
 
@@ -503,6 +510,9 @@ input[type="checkbox"] {
     flex-direction: row;
     justify-content: space-between;
     overflow-x: scroll;
+}
+.basic__row::-webkit-scrollbar {
+    width: 0;
 }
 .basic__wrapper{
     margin: 82px 10%;
